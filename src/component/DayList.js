@@ -9,7 +9,7 @@ const DayList = () => {
     <ul>
       {data.days.map((day) => (
         <li key={day.id}>
-          <Link to={`/day/${day.day}`}>DAY {day.day}</Link>
+          <Link to={`/day/${day.day}`}>DAY{day.day}</Link>
         </li>
       ))}
     </ul>
