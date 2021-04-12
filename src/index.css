@@ -38,13 +38,21 @@ a {
 }
 
 .header {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
 }
 
 .header .menu {
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 0;
+  margin: 20px;
+}
+
+.header .menu button {
+  margin: 3px;
 }
 
 .header .link {
@@ -69,12 +77,13 @@ a {
 
 .list_day a {
   display: block;
-  padding: 20px 0;
+  padding: 10px 10px;
   font-weight: bold;
-  color: #fff;
+  color: black;
   text-align: center;
   border-radius: 10px;
-  background-color: dodgerblue;
+  border: 1px solid rgb(85, 57, 85);
+  background-color: rgb(252, 227, 252);
 }
 
 table {
@@ -113,7 +122,7 @@ button {
   border-radius: 6px;
   padding: 10px 20px;
   color: #fff;
-  background-color: dodgerblue;
+  background-color: rgb(250, 177, 250);
 }
 
 .input_area {
