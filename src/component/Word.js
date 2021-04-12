@@ -26,7 +26,7 @@ const Word = ({ word }) => {
           </button>
         </td>
         <td>
-          <button className="bnt_del">DELETE WORD</button>
+          <button className="btn_del">DELETE WORD</button>
         </td>
       </tr>
     </div>

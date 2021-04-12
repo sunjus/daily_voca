@@ -1,0 +1,120 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    }
+  ],
+  "words": [
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "book",
+      "sense": "A book is a number of pieces of paper, usually with words printed on them, which are fastened together and fixed inside a cover of stronger pape.",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "day": 2,
+      "eng": "car",
+      "sense": "A car is a motor vehicle with room for a small number of passengers.",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 3,
+      "eng": "school",
+      "sense": "A school is a place where children are educated.",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 3,
+      "eng": "pencil",
+      "sense": " pencil is an object that you write or draw with.",
+      "isDone": false
+    },
+    {
+      "day": 3,
+      "eng": "window",
+      "sense": "A window is a space in the wall of a building or in the side of a vehicle, which has glass in it so that light can come in and you can see out.",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "day": 3,
+      "eng": "house",
+      "sense": "A house is a building in which people live, usually the people belonging to one family.",
+      "isDone": false,
+      "id": 6
+    },
+    {
+      "day": 2,
+      "eng": "mouse",
+      "sense": "mouse is a small furry animal with a long tail.",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": 4,
+      "eng": "monkey",
+      "sense": "monkey is an animal with a long tail which lives in hot countries and climbs trees.",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": 4,
+      "eng": "apple",
+      "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": 3,
+      "eng": "apple",
+      "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": "2",
+      "eng": "mouse",
+      "sense": "mouse is a small furry animal with a long tail.",
+      "isDone": false,
+      "id": 11
+    },
+    {
+      "day": 1,
+      "eng": "monkey",
+      "sense": "monkey is an animal with a long tail which lives in hot countries and climbs trees.",
+      "isDone": false,
+      "id": 12
+    },
+    {
+      "day": 2,
+      "eng": "apple",
+      "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": 1,
+      "eng": "apple",
+      "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
+      "isDone": false,
+      "id": 14
+    }
+  ]
+}
