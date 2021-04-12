@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../db/data.json";
 import { useParams } from "react-router-dom";
+import Word from "./Word";
 
 const Day = () => {
   //useParams(): parameters on a given URL (App.js day/:day)
@@ -16,19 +17,7 @@ const Day = () => {
       <table>
         <tbody>
           {dailyWord.map((word) => (
-            <tr key={word.id}>
-              <td>
-                <input type="checkbox" />
-              </td>
-              <td>{word.eng}</td>
-              <td>{word.sense}</td>
-              <td>
-                <button>DEFINITION</button>
-              </td>
-              <td>
-                <button className="bnt_del">DELETE</button>
-              </td>
-            </tr>
+            <Word word={word} key={word.id} />
           ))}
         </tbody>
       </table>

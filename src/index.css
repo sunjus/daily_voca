@@ -114,6 +114,8 @@ table td:first-child {
 }
 
 button {
+  position: relative;
+  margin: 15px auto;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;

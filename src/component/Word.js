@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Word = ({ word }) => {
+  const [isShow, setIsShow] = useState(false);
+  const [isDone, setIsDone] = useState(word.isDone);
+
+  const toggleShow = () => {
+    setIsShow(!isShow);
+  };
+
+  const toggleDone = () => {
+    setIsDone(!isDone);
+  };
+
   return (
     <div>
-      <tr>
+      <tr className={isDone ? "off" : ""}>
         <td>
-          <input type="checkbox" />
+          <input type="checkbox" checked={isDone} onChange={toggleDone} />
         </td>
         <td>{word.eng}</td>
-        <td>{word.sense}</td>
+        <td>{isShow && word.sense}</td>
         <td>
-          <button>DEFINITION</button>
+          <button onClick={toggleShow}>
+            {isShow ? "HIDE" : "SHOW"} DEFINITION
+          </button>
         </td>
         <td>
-          <button className="bnt_del">DELETE</button>
+          <button className="bnt_del">DELETE WORD</button>
         </td>
       </tr>
     </div>
