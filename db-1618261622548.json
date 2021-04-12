@@ -23,7 +23,7 @@
       "day": 1,
       "eng": "book",
       "sense": "A book is a number of pieces of paper, usually with words printed on them, which are fastened together and fixed inside a cover of stronger pape.",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 2,
