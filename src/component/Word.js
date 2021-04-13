@@ -10,6 +10,7 @@ const Word = ({ word }) => {
 
   const toggleDone = () => {
     //setIsDone(!isDone);
+    //Update of CRUD
     fetch(`http://localhost:3001/words/${word.id}`, {
       method: "PUT",
       headers: {
@@ -26,6 +27,14 @@ const Word = ({ word }) => {
     });
   };
 
+  const del = () => {
+    if (window.confirm("Do you want to delete it?")) {
+      fetch(`http://localhost:3001/words/${word.id}`, {
+        method: "DELETE",
+      });
+    }
+  };
+
   return (
     <div>
       <tr className={isDone ? "off" : ""}>
@@ -40,7 +49,9 @@ const Word = ({ word }) => {
           </button>
         </td>
         <td>
-          <button className="btn_del">DELETE WORD</button>
+          <button onClick={del} className="btn_del">
+            DELETE WORD
+          </button>
         </td>
       </tr>
     </div>
