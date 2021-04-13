@@ -15,6 +15,10 @@
     {
       "day": 4,
       "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
     }
   ],
   "words": [
@@ -108,6 +112,28 @@
       "sense": "If you make an acquisition, you buy or obtain something, often to add to things that you already have.",
       "isDone": false,
       "id": 15
+    },
+    {
+      "day": "2",
+      "eng": "deep-seated",
+      "sense": "A deep-seated problem, feeling, or belief is difficult to change because its causes have been there for a long time.",
+      "isDone": false,
+      "id": 16
+    },
+    {
+      "day": null,
+      "id": 17
+    },
+    {
+      "day": null,
+      "id": 18
+    },
+    {
+      "day": "5",
+      "eng": "disposal",
+      "sense": "Disposal is the act of getting rid of something that is no longer wanted or needed.",
+      "isDone": false,
+      "id": 21
     }
   ]
 }

@@ -10,11 +10,12 @@ const Header = () => {
         </h1>
       </div>
       <div className="menu">
+        <Link to="/"> 🏠 </Link>
         <button>
-          <a href="#">Add vaca</a>
+          <Link to="/create_word">Add vaca</Link>
         </button>
         <button>
-          <a href="#">Add day</a>
+          <Link to="/create_day">Add day</Link>
         </button>
       </div>
     </div>
