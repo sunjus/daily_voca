@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-const Word = ({ word }) => {
+//props로 받아온 word를 w라는 변수로 쓰겠다
+const Word = ({ word: w }) => {
+  //delete 후에 화면를 자동으로 새로고침 해주기 위해
+  const [word, setWord] = useState(w);
+
   const [isShow, setIsShow] = useState(true);
   const [isDone, setIsDone] = useState(word.isDone);
 
@@ -27,13 +31,23 @@ const Word = ({ word }) => {
     });
   };
 
+  //Delete of CRUD
   const del = () => {
     if (window.confirm("Do you want to delete it?")) {
       fetch(`http://localhost:3001/words/${word.id}`, {
         method: "DELETE",
+        //delete 후에 화면를 자동으로 새로고침 해주기 위해
+      }).then((res) => {
+        if (res.ok) {
+          setWord({ id: 0 });
+        }
       });
     }
   };
+
+  if (word.id === 0) {
+    return null;
+  }
 
   return (
     <div>
