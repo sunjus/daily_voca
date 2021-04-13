@@ -4,14 +4,16 @@
 
 ** react-router-dom
 
-** useParams
+** useParams(): parameters on a given URL
 
 ** json-server, REST API
 
-** useEffect, fetch() : API request
+** useEffect(), fetch() : API request
 
 ** Custom Hooks
 
 ** CRUD
 
-** useRef to access DOM
+** useRef() to access DOM
+
+** useHistory() to redirect page
