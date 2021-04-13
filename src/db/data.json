@@ -19,6 +19,18 @@
     {
       "day": 5,
       "id": 5
+    },
+    {
+      "day": 6,
+      "id": 6
+    },
+    {
+      "day": 7,
+      "id": 7
+    },
+    {
+      "day": 8,
+      "id": 8
     }
   ],
   "words": [
@@ -134,6 +146,34 @@
       "sense": "Disposal is the act of getting rid of something that is no longer wanted or needed.",
       "isDone": false,
       "id": 21
+    },
+    {
+      "day": "8",
+      "eng": "destructor",
+      "sense": "a furnace or incinerator for the disposal of refuse, esp one that uses the resulting heat to generate power",
+      "isDone": false,
+      "id": 22
+    },
+    {
+      "day": "7",
+      "eng": "disposure",
+      "sense": " a rare word for disposal, disposition",
+      "isDone": false,
+      "id": 23
+    },
+    {
+      "day": "6",
+      "eng": "squad",
+      "sense": "A squad is a section of a police force that is responsible for dealing with a particular type of crime.",
+      "isDone": false,
+      "id": 24
+    },
+    {
+      "day": "6",
+      "eng": "evacuation",
+      "sense": "The act of evacuating; leaving a place in an orderly fashion, especially for safety.",
+      "isDone": false,
+      "id": 25
     }
   ]
 }

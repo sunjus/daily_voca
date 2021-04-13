@@ -25,6 +25,7 @@ const Day = () => {
   return (
     <div className="word">
       <h2>DAY {day}</h2>
+      {words.length === 0 && <span>Loading...</span>}
       <table>
         <tbody>
           {words.map((word) => (
