@@ -18,7 +18,7 @@ const Day = () => {
       .then((data) => {
         setWords(data);
       });
-    //의존성 배열dependency array
+    //의존성 배열dependency array: this day = line 14 {day}
   }, [day]);
   */
 

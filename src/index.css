@@ -108,23 +108,22 @@ table td:first-child {
 }
 
 .btn_del {
-  margin-left: 10px;
+  margin: 10px;
   color: #fff;
-  background-color: firebrick;
+  background-color: rgb(238, 108, 108);
 }
 
 button {
   position: relative;
-  margin: 15px auto;
-  padding: 10px;
+  margin: 10px;
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
   border: 0 none;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 10px;
   color: #fff;
-  background-color: rgb(250, 177, 250);
+  background-color: rgb(251, 167, 251);
 }
 
 .input_area {

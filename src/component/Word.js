@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Word = ({ word }) => {
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   const [isDone, setIsDone] = useState(word.isDone);
 
   const toggleShow = () => {
@@ -9,7 +9,21 @@ const Word = ({ word }) => {
   };
 
   const toggleDone = () => {
-    setIsDone(!isDone);
+    //setIsDone(!isDone);
+    fetch(`http://localhost:3001/words/${word.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...word,
+        isDone: !isDone,
+      }),
+    }).then((res) => {
+      if (res.ok) {
+        setIsDone(!isDone);
+      }
+    });
   };
 
   return (
@@ -34,3 +48,10 @@ const Word = ({ word }) => {
 };
 
 export default Word;
+
+/*
+Create - POST
+Read - GET 
+Update - PUT
+Delete - DELETE
+*/
