@@ -4,7 +4,7 @@
 
 ** react-router-dom
 
-** useParams()
+** useParams(): parameters on a given URL
 
 ** json-server, REST API
 
