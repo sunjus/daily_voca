@@ -9,6 +9,23 @@ const CreateWord = () => {
     console.log(engRef.current.value);
     console.log(defRef.current.value);
     console.log(dayRef.current.value);
+
+    fetch(`http://localhost:3001/words/`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        day: dayRef.current.value,
+        eng: engRef.current.value,
+        sense: defRef.current.value,
+        isDone: false,
+      }),
+    }).then((res) => {
+      if (res.ok) {
+        alert("It's completed.");
+      }
+    });
   };
 
   //to access DOM eg.focus,scroll

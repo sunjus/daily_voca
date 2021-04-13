@@ -23,7 +23,7 @@
       "day": 1,
       "eng": "book",
       "sense": "A book is a number of pieces of paper, usually with words printed on them, which are fastened together and fixed inside a cover of stronger pape.",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 2,
@@ -101,6 +101,13 @@
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
       "isDone": false,
       "id": 14
+    },
+    {
+      "day": "1",
+      "eng": "acquisition",
+      "sense": "If you make an acquisition, you buy or obtain something, often to add to things that you already have.",
+      "isDone": false,
+      "id": 15
     }
   ]
 }
