@@ -4,6 +4,8 @@
 
 ** react-router-dom
 
+** useParams
+
 ** json-server, REST API
 
 ** useEffect, fetch() : API request
