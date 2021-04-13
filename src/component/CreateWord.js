@@ -1,15 +1,15 @@
 import React, { useRef } from "react";
 import useFetch from "../hooks/useFetch";
+import { useHistory } from " react-router";
 
 const CreateWord = () => {
   const days = useFetch("http://localhost:3001/days");
+  const history = useHistory();
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(engRef.current.value);
-    console.log(defRef.current.value);
-    console.log(dayRef.current.value);
 
+    //Create of CRUD
     fetch(`http://localhost:3001/words/`, {
       method: "POST",
       headers: {
@@ -24,6 +24,8 @@ const CreateWord = () => {
     }).then((res) => {
       if (res.ok) {
         alert("It's completed.");
+        //Link to 처럼 페이지 전환시 유용
+        history.push(`/day/${dayRef.current.value}`);
       }
     });
   };
