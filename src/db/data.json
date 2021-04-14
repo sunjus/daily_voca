@@ -63,56 +63,56 @@
       "isDone": false
     },
     {
-      "day": 3,
+      "day": "3",
       "eng": "window",
       "sense": "A window is a space in the wall of a building or in the side of a vehicle, which has glass in it so that light can come in and you can see out.",
       "isDone": true,
       "id": 5
     },
     {
-      "day": 3,
+      "day": "3",
       "eng": "house",
       "sense": "A house is a building in which people live, usually the people belonging to one family.",
       "isDone": false,
       "id": 6
     },
     {
-      "day": 2,
+      "day": "2",
       "eng": "mouse",
       "sense": "mouse is a small furry animal with a long tail.",
       "isDone": false,
       "id": 7
     },
     {
-      "day": 4,
+      "day": "4",
       "eng": "monkey",
       "sense": "monkey is an animal with a long tail which lives in hot countries and climbs trees.",
       "isDone": false,
       "id": 8
     },
     {
-      "day": 4,
+      "day": "4",
       "eng": "apple",
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
       "isDone": false,
       "id": 9
     },
     {
-      "day": 1,
+      "day": "1",
       "eng": "monkey",
       "sense": "monkey is an animal with a long tail which lives in hot countries and climbs trees.",
       "isDone": true,
       "id": 12
     },
     {
-      "day": 2,
+      "day": "2",
       "eng": "apple",
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
       "isDone": false,
       "id": 13
     },
     {
-      "day": 1,
+      "day": "1",
       "eng": "apple",
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
       "isDone": false,

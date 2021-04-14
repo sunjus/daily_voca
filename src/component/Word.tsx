@@ -4,22 +4,21 @@ interface IProps {
   word: IWord;
 }
 
-interface IWord {
-  id: number;
+export interface IWord {
   day: string;
   eng: string;
   sense: string;
   isDone: boolean;
+  id: number;
 }
 
 //props로 받아온 word를 w라는 변수로 쓰겠다
-const Word = ({ word: w }:IProps) => {
+const Word = ({ word: w }: IProps) => {
   //delete 후에 화면를 자동으로 새로고침 해주기 위해
   const [word, setWord] = useState(w);
-
-  const [isShow, setIsShow] = useState(true);
+  const [isShow, setIsShow] = useState(false);
   const [isDone, setIsDone] = useState(word.isDone);
-
+  
   const toggleShow = () => {
     setIsShow(!isShow);
   };
@@ -51,7 +50,7 @@ const Word = ({ word: w }:IProps) => {
         //delete 후에 화면를 자동으로 새로고침 해주기 위해
       }).then((res) => {
         if (res.ok) {
-          setWord({ ...word, id: 0 });
+          setWord({ ...word, id: 0, });
         }
       });
     }

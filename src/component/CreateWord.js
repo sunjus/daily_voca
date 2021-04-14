@@ -63,7 +63,7 @@ const CreateWord = () => {
           </select>
         </div>
         <button style={{ opacity: isLoading ? 0.3 : 1 }}>
-          {isLoading ? "saving..." : "save"}
+          {isLoading ? "Saving..." : "Save"}
         </button>
       </form>
     </div>
