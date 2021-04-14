@@ -1,7 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+interface IProps {
+  word: IWord;
+}
+
+interface IWord {
+  id: number;
+  day: string;
+  eng: string;
+  sense: string;
+  isDone: boolean;
+}
 
 //props로 받아온 word를 w라는 변수로 쓰겠다
-const Word = ({ word: w }) => {
+const Word = ({ word: w }:IProps) => {
   //delete 후에 화면를 자동으로 새로고침 해주기 위해
   const [word, setWord] = useState(w);
 
@@ -39,7 +51,7 @@ const Word = ({ word: w }) => {
         //delete 후에 화면를 자동으로 새로고침 해주기 위해
       }).then((res) => {
         if (res.ok) {
-          setWord({ id: 0 });
+          setWord({ ...word, id: 0 });
         }
       });
     }
