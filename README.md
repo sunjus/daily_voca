@@ -17,3 +17,5 @@
 ** useRef() to access DOM
 
 ** useHistory() to redirect page
+
+** typescript
