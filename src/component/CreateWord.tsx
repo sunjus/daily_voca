@@ -1,18 +1,24 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { useHistory } from "react-router";
+import { IDay } from "./DayList"
 
 const CreateWord = () => {
-  const days = useFetch("http://localhost:3001/days");
+  const days : IDay[] = useFetch("http://localhost:3001/days");
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     //통신중에 버튼을 눌러도 반응하지 않게 하기 위해
-    if (!isLoading) {
+    if (!isLoading && dayRef.current && engRef.current && defRef.current) {
       setIsLoading(true);
+
+      const day = dayRef.current.value;
+      const eng = engRef.current.value;
+      const sense = defRef.current.value;  
+
       //Create of CRUD
       fetch(`http://localhost:3001/words/`, {
         method: "POST",
@@ -29,7 +35,7 @@ const CreateWord = () => {
         if (res.ok) {
           alert("It's completed.");
           //Link to 처럼 페이지 전환시 유용
-          history.push(`/day/${dayRef.current.value}`);
+          history.push(`/day/${day}`);
           setIsLoading(false);
         }
       });
@@ -37,9 +43,9 @@ const CreateWord = () => {
   };
 
   //to access DOM eg.focus,scroll
-  const engRef = useRef(null);
-  const defRef = useRef(null);
-  const dayRef = useRef(null);
+  const engRef = useRef<HTMLInputElement>(null);
+  const defRef = useRef<HTMLInputElement>(null);
+  const dayRef = useRef<HTMLSelectElement>(null);
 
   return (
     <div>
