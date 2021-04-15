@@ -29,7 +29,7 @@
      -Start the project with 'yarn run start' and 'json-server --watch ./src/db/data.json --port 3001'
 
 ## LIVE DEMO
-[![Netlify Status]
+[Netlify Status]
 
 ## TECHNICAL NOTES
      -react
