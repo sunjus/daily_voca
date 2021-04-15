@@ -31,8 +31,6 @@
 ## LIVE DEMO
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cab6d56a-01ec-419c-8a69-24e13e78acb2/deploy-status)](https://movie-wonderful.netlify.app/)
 
-## FEATURES
-
 ## TECHNICAL NOTES
      -react
      -typescript
