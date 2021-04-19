@@ -148,3 +148,27 @@ button {
   height: 40px;
   font-size: 20px;
 }
+
+.word_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word_arrow {
+  margin-left: 10px;
+}
+
+.arrow-left,
+.arrow-right {
+  padding: 3px;
+  border: 1px solid rgb(112, 110, 110);
+}
+
+.arrow-left {
+  border-radius: 5px 0 0 5px;
+}
+
+.arrow-right {
+  border-radius: 0 5px 5px 0;
+}
