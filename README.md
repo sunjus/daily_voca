@@ -8,7 +8,7 @@
 
 ** json-server, REST API
 
-** useEffect(), fetch() : API request
+** useEffect(), fetch() ==> Axios : API request
 
 ** Custom Hooks
 
