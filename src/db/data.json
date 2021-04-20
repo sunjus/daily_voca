@@ -31,6 +31,10 @@
     {
       "day": 8,
       "id": 8
+    },
+    {
+      "day": 9,
+      "id": 9
     }
   ],
   "words": [
@@ -39,21 +43,14 @@
       "day": 1,
       "eng": "book",
       "sense": "A book is a number of pieces of paper, usually with words printed on them, which are fastened together and fixed inside a cover of stronger pape.",
-      "isDone": false
-    },
-    {
-      "id": 2,
-      "day": 2,
-      "eng": "car",
-      "sense": "A car is a motor vehicle with room for a small number of passengers.",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 3,
       "day": 3,
       "eng": "school",
       "sense": "A school is a place where children are educated.",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 4,
@@ -80,14 +77,14 @@
       "day": "2",
       "eng": "mouse",
       "sense": "mouse is a small furry animal with a long tail.",
-      "isDone": false,
+      "isDone": true,
       "id": 7
     },
     {
       "day": "4",
       "eng": "monkey",
       "sense": "monkey is an animal with a long tail which lives in hot countries and climbs trees.",
-      "isDone": false,
+      "isDone": true,
       "id": 8
     },
     {
@@ -108,14 +105,14 @@
       "day": "2",
       "eng": "apple",
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
-      "isDone": false,
+      "isDone": true,
       "id": 13
     },
     {
       "day": "1",
       "eng": "apple",
       "sense": "An apple is a round fruit with smooth green, yellow, or red skin and firm white flesh.",
-      "isDone": false,
+      "isDone": true,
       "id": 14
     },
     {
@@ -151,7 +148,7 @@
       "day": "8",
       "eng": "destructor",
       "sense": "a furnace or incinerator for the disposal of refuse, esp one that uses the resulting heat to generate power",
-      "isDone": false,
+      "isDone": true,
       "id": 22
     },
     {
@@ -174,6 +171,13 @@
       "sense": "The act of evacuating; leaving a place in an orderly fashion, especially for safety.",
       "isDone": false,
       "id": 25
+    },
+    {
+      "day": "9",
+      "eng": "indictment",
+      "sense": "If you say that one thing is an indictment of another thing, you mean that it shows how bad the other thing is.",
+      "isDone": false,
+      "id": 26
     }
   ]
 }

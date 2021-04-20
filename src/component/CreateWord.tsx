@@ -16,8 +16,8 @@ const CreateWord = () => {
       setIsLoading(true);
 
       const day = dayRef.current.value;
-      const eng = engRef.current.value;
-      const sense = defRef.current.value;  
+      //const eng = engRef.current.value;
+      //const sense = defRef.current.value;  
 
       //Create of CRUD
       fetch(`http://localhost:3001/words/`, {
