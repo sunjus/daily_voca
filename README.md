@@ -23,7 +23,7 @@
 
 ## INSTALLATION
 
-     -Clone the repository git clone https://github.com/sunjus/movie_list_app.git
+     -Clone the repository git clone https://github.com/sunjus/dictionary.git
      -Navigate into the directory cd movie_list_app
      -Install dependencies yarn
      -Start the project with 'yarn run start' and 'json-server --watch ./src/db/data.json --port 3001'
