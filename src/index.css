@@ -4,19 +4,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 22px;
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 20px;
+  margin: 0;
 }
 
 ol,
-ul,
-li {
-  margin: 10px;
-  padding: 10px;
+ul {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
-  display: flex;
-  justify-content: center;
 }
 
 code {
@@ -30,22 +26,20 @@ a {
 }
 
 .App {
-  max-width: 780px;
+  width: 768px;
   background: linear-gradient(to bottom, #f08c89, bisque);
   border: 10px dotted bisque;
   height: 100vh;
-  margin: 10px;
-  padding: 10px;
+  margin: 0 auto;
 }
 
 .header {
-  max-width: 780px;
   display: flex;
   flex-direction: column;
 }
 
 .header .menu {
-  right: 0;
+  margin-bottom: 5px;
 }
 
 .header .menu button {
@@ -70,12 +64,13 @@ a {
 .list_day li {
   flex: 20% 0 0;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 20px;
+  margin: 5px 10px;
 }
 
 .list_day a {
   display: block;
-  padding: 10px 10px;
+  padding: 10px;
   font-weight: bold;
   color: white;
   text-align: center;
