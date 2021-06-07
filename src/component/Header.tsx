@@ -4,13 +4,12 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="logo">
+      <div className="logo">    
         <h1>
-          <Link to="/"> DAILY VOCA </Link>
+          <Link to="/"> 📖 DAILY VOCA </Link>
         </h1>
       </div>
       <div className="menu">
-        <Link to="/"> Home </Link>
         <button>
           <Link to="/create_word">Add vaca</Link>
         </button>

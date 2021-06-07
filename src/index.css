@@ -1,15 +1,12 @@
 body {
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
+  font-size: 22px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ol,
@@ -33,27 +30,27 @@ a {
 }
 
 .App {
-  width: 800px;
-  margin: 0 auto;
+  max-width: 780px;
+  background: linear-gradient(to bottom, #f08c89, bisque);
+  border: 10px dotted bisque;
+  height: 100vh;
+  margin: 10px;
+  padding: 10px;
 }
 
 .header {
+  max-width: 780px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  margin: 20px;
 }
 
 .header .menu {
-  position: absolute;
-  top: 30px;
   right: 0;
-  margin: 20px;
 }
 
 .header .menu button {
   margin: 3px;
-  background-color: rgb(250, 121, 250);
+  background-color: rgb(121, 180, 180);
 }
 
 .header .link {
@@ -80,11 +77,11 @@ a {
   display: block;
   padding: 10px 10px;
   font-weight: bold;
-  color: black;
+  color: white;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid rgb(241, 66, 241);
-  background-color: rgb(250, 121, 250);
+  border: 1px solid rgb(17, 2, 46);
+  background-color: #640941;
 }
 
 table {
@@ -96,7 +93,7 @@ table td {
   height: 70px;
   border: 1px solid #ccc;
   text-align: center;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 table td:first-child {
@@ -124,7 +121,7 @@ button {
   border-radius: 6px;
   padding: 10px;
   color: #fff;
-  background-color: rgb(197, 119, 197);
+  background-color: rgb(121, 180, 180);
 }
 
 .input_area {
@@ -163,7 +160,7 @@ button {
 .arrow-right {
   margin: 0 10px;
   padding: 2px 3px 5px;
-  border: 1.8px solid rgb(187, 185, 185);
+  color: black;
 }
 
 .arrow-left {
