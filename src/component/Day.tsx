@@ -7,8 +7,8 @@ const Day = () => {
   //useParams(): parameters on a given URL (App.js day/:day)
   //const { day } = useParams();
   const day = useParams<{ day : string }>().day;
-  const days : IDay[] = useFetch("http://localhost:3001/days");
-  const words : IWord[] = useFetch(`http://localhost:3001/words?day=${day}`);
+  const days : IDay[] = useFetch("http://localhost:5000/days");
+  const words : IWord[] = useFetch(`http://localhost:5000/words?day=${day}`);
   console.log(day)
   console.log(words)
   

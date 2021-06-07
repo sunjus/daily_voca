@@ -7,12 +7,12 @@ export interface IDay {
 }
 
 const DayList = () => {
-  const days : IDay[] = useFetch("http://localhost:3001/days");
+  const days : IDay[] = useFetch("http://localhost:5000/days");
   /*
   const [days, setDays] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/days")
+    fetch("http://localhost:5000/days")
       .then((res) => {
         return res.json();
       })

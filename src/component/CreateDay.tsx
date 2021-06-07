@@ -3,12 +3,12 @@ import { useHistory } from "react-router";
 import { IDay } from './DayList'
 
 const CreateDay = () => {
-  const days : IDay[] = useFetch("http://localhost:3001/days");
+  const days : IDay[] = useFetch("http://localhost:5000/days");
   const history = useHistory();
 
   const addDay = () => {
     //Create of CRUD
-    fetch(`http://localhost:3001/days/`, {
+    fetch(`http://localhost:5000/days/`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",

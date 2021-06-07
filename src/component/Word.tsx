@@ -26,7 +26,7 @@ const Word = ({ word: w }: IProps) => {
   const toggleDone = () => {
     //setIsDone(!isDone);
     //Update of CRUD
-    fetch(`http://localhost:3001/words/${word.id}`, {
+    fetch(`http://localhost:5000/words/${word.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const Word = ({ word: w }: IProps) => {
   //Delete of CRUD
   const del = () => {
     if (window.confirm("Do you want to delete it?")) {
-      fetch(`http://localhost:3001/words/${word.id}`, {
+      fetch(`http://localhost:5000/words/${word.id}`, {
         method: "DELETE",
         //delete 후에 화면를 자동으로 새로고침 해주기 위해
       }).then((res) => {

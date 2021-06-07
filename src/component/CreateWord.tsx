@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 import { IDay } from "./DayList"
 
 const CreateWord = () => {
-  const days : IDay[] = useFetch("http://localhost:3001/days");
+  const days : IDay[] = useFetch("http://localhost:5000/days");
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -20,7 +20,7 @@ const CreateWord = () => {
       //const sense = defRef.current.value;  
 
       //Create of CRUD
-      fetch(`http://localhost:3001/words/`, {
+      fetch(`http://localhost:5000/words/`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
